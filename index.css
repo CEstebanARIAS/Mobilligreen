@@ -1,0 +1,355 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+    line-height: 1.6;
+  }
+  
+  /* Header */
+  header {
+    background-color: #007a6e;
+    color: #fff;
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  header h1 {
+    font-size: 5rem;
+    margin-bottom: 10px;
+  }
+  
+  header p {
+    font-size: 1.2rem;
+    font-weight: 300;
+  }
+  
+  /* Intro */
+  .intro {
+    background-color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .intro img {
+    width: 500px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+  }
+  
+  .intro p {
+    font-size: 1.5rem;
+    color: #007a6e;
+    margin-bottom: 20px;
+  }
+  
+  .intro button {
+    background-color: #007a6e;
+    color: #fff;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+  }
+  
+  .intro button:hover {
+    background-color: #005f54;
+  }
+  
+  /* Secciones */
+  section {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  section h2 {
+    font-size: 2rem;
+    color: #007a6e;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+/* SECCIÓN TESTIMONIOS */
+#testimonios {
+  padding: 60px 20px;
+  background-color: #f2f4f8;
+}
+
+#testimonios h2 {
+  font-size: 2.5rem;
+  color: #007a6e;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.testimonios-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+/* TARJETA DEL TESTIMONIO */
+.testimonio-card {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonio-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+}
+
+.testimonio-card img {
+  width: 100px;
+  height: 200px;
+  
+  object-fit: cover;
+  margin-right: 20px;
+  border: 1px solid #007a6e;
+}
+
+.testimonio-texto p {
+  font-style: italic;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.testimonio-texto h3 {
+  color: #007a6e;
+  font-size: 1.1rem;
+}
+
+  
+  /* Reconocimientos y Casos de Éxito */
+  .carrusel-container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .carrusel-container h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #2c3e50;
+  }
+  .emoji {
+    font-size: 80px;
+    padding: 30px 0;
+    background-color: #f9f9f9;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  
+  .carrusel {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 20px;
+    padding-bottom: 10px;
+  }
+  
+  .card {
+    flex: 0 0 300px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    scroll-snap-align: start;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  
+  .card-content {
+    padding: 20px;
+  }
+  
+  .card-content h3 {
+    font-size: 1.2rem;
+    color: #27ae60;
+    margin-bottom: 10px;
+  }
+  
+  .card-content p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  /* Scrollbar estilizada (opcional) */
+  .carrusel::-webkit-scrollbar {
+    height: 8px;
+  }
+  
+  .carrusel::-webkit-scrollbar-thumb {
+    background-color: #27ae60;
+    border-radius: 10px;
+  }
+  
+  .carrusel::-webkit-scrollbar-track {
+    background-color: #f0f0f0;
+  }
+  
+
+
+  
+  .equipo {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+  
+  .equipo h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #007a6e;
+    text-align: center;
+  }
+  
+  .equipo .miembro {
+    display: flex;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .equipo .miembro:hover {
+    transform: translateY(-5px);
+  }
+  
+  .equipo .info {
+    flex: 1;
+    padding: 30px;
+  }
+  
+  .equipo .info h3 {
+    color: #333;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+  
+  .equipo .info p {
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .equipo .foto {
+    flex: 1;
+  }
+  
+  .equipo .foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .equipo button {
+    background-color: #007a6e;
+    color: #fff;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+  }
+
+  /* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.6);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 30px;
+  border-radius: 10px;
+  width: 600px;
+  max-width: 90%;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+  text-align: center;
+}
+
+.modal-content h2 {
+  font-size: 2.5rem;
+  color: #007a6e;
+}
+.modal-content h3 {
+  margin-bottom: 20px;
+  color: #f0765e;
+  font-size: 1rem;
+  font-family: monospace;
+}
+
+.modal-content a {
+  text-decoration: none;
+  color: #f0765e;
+  transition: 0.3s;
+}
+
+.modal-content a:hover{
+  font-size: 1.1rem;
+  transition: 0.2s;
+}
+
+.modal-content p {
+  font-size: 15px;
+  color: #333;
+  text-align: left;
+  padding: 5px;
+}
+
+.close {
+  position: absolute;
+  right: 25px;
+  top: 20px;
+  font-size: 30px;
+  color: #333;
+  cursor: pointer;
+}
+  
+  
+  /* Footer */
+  footer {
+    background-color: #007a6e;
+    color: #fff;
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 0.9rem;
+    margin-top: 50px;
+  }
+  
+
